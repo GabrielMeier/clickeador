@@ -13,7 +13,7 @@ const App = () => {
     setTime(prev => prev - 1);
   };
   const startTimer = () => {
-    setTime(10);
+    setTime(10);r
     setClicks(0);
     setPlaying(true);
     const interval = setInterval(() => {
@@ -21,10 +21,11 @@ const App = () => {
     }, 1000);
     setTimeout(() => {
       setPlaying(false);
+      console.log(clicksRef.current); 
       clearInterval(interval);
     }, 10000);
   };
-
+  rep
   return (
     <div className="App">
       <div className="Top">
